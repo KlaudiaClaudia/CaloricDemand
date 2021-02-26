@@ -84,11 +84,20 @@ public class Calculate {
     }
     public double calcCPM(){
         System.out.println("Podaj współczynnik aktywności: ");
+        factorMenu();
         factor = sc.nextDouble();
         calcBMR();
         CPM = BMR * factor;
-        System.out.println("Twoje dzienne zapotrzebowanie kaloryczne wynosi: " + round(CPM) + " kcal.");
+        System.out.println("Twoje zapotrzebowanie kaloryczne przy wybranej aktywności wynosi: " + round(CPM) + " kcal.");
       return CPM;
+    }
+    public void factorMenu(){
+        System.out.println("\n1,0  -> tryb życia leżący, siedzący, brak aktywności fizycznej");
+        System.out.println("1,2  -> praca siedząca, aktywność fizyczna na niskim poziomie");
+        System.out.println("1,4  -> praca nie fizyczna, treningi 2 razy w tygodniu");
+        System.out.println("1,6  -> lekka praca fizyczna, treningi 3-4 razy w tygodniu");
+        System.out.println("1,8  -> praca fizyczna, treningi 5 razy w tygodniu");
+        System.out.println("2,0  -> ciężka praca fizyczna, codzienne treningi");
     }
 
 }

@@ -24,4 +24,5 @@ public class Menu extends Calculate{
             calcCPM();
         }
     }
+
 }
