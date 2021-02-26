@@ -82,11 +82,11 @@ public class Calculate {
         System.out.println("Twoje podstawowe zapotrzebowanie kaloryczne wynosi: "+round(BMR) + " kcal.");
         return BMR;
     }
-    public void menuFisrts(){
-        System.out.println("Witaj w kalkulaotrze zapotrzebowania kalorycznego!");
-        System.out.println("1. Oblicz podstawowe zapotrzebowanie");
-        System.out.println("2. Oblicz dzienne zapotrzebowanie");
-    }
+//    public void menuFisrts(){
+//        System.out.println("Witaj w kalkulaotrze zapotrzebowania kalorycznego!");
+//        System.out.println("1. Oblicz podstawowe zapotrzebowanie");
+//        System.out.println("2. Oblicz dzienne zapotrzebowanie");
+//    }
     public double calcCPM(){
         System.out.println("Podaj współczynnik aktywności: ");
         factor = sc.nextDouble();
@@ -95,16 +95,16 @@ public class Calculate {
         System.out.println("Twoje dzienne zapotrzebowanie kaloryczne wynosi: " + round(CPM) + " kcal.");
       return CPM;
     }
-    public void mainMenu(){
-        System.out.println("Podaj wagę: ");
-        weight = sc.nextInt();
-        System.out.println("Podaj wzrost: ");
-        height = sc.nextInt();
-        System.out.println("Podaj swój wiek: ");
-        age=sc.nextInt();
-        sc.nextLine();
-        System.out.println("Podaj czy jesteś kobieta (K) lub mężczyzną (M): ");
-        male= sc.nextLine();
-    }
+//    public void mainMenu(){
+//        System.out.println("Podaj wagę: ");
+//        weight = sc.nextInt();
+//        System.out.println("Podaj wzrost: ");
+//        height = sc.nextInt();
+//        System.out.println("Podaj swój wiek: ");
+//        age=sc.nextInt();
+//        sc.nextLine();
+//        System.out.println("Podaj czy jesteś kobieta (K) lub mężczyzną (M): ");
+//        male= sc.nextLine();
+//    }
 
 }
